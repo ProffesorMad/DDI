@@ -14,7 +14,8 @@
 	<br/>
 	<a href="/listItems">Listado de Items</a>
 	<br/>
-	<a href="/insertItems.jsp">Formulario de insercion de Items</a>
+	<a href="/insertChamps.jsp">Añadir Champs</a>
+	<br/>
 	
 </body>
 </html>

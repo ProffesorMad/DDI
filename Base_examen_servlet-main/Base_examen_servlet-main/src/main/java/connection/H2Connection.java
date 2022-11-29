@@ -9,12 +9,12 @@ public class H2Connection extends AbstractConnection {
 
 	@Override
 	public String getDatabaseUser() {
-		return "root";
+		return "admin";
 	}
 
 	@Override
 	public String getDatabasePassword() {
-		return "root120";
+		return "Admin1234";
 	}
 
 }

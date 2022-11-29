@@ -25,7 +25,7 @@
 </c:forEach>
 </table>
 <br/>
-<a type="button" class="btn btn-primary" href="index.jsp">Volver a Home</a>
+<a type="button" class="btn btn-primary" href="index.jsp">Atras</a>
 </div>
 </body>
 </html>

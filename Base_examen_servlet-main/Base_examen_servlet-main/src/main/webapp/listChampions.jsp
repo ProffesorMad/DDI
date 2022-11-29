@@ -29,12 +29,13 @@
 			<input type="hidden" name="tags" value="${champion.tags}"/>
 			<input type="submit" value="Habilidades">
 		</form>
+		<a href="/eliminarChamp?id=${item.id}">Eliminar</a>
 		</td>
 	</tr>
 </c:forEach>
 </table>
 <br/>
-<a type="button" class="btn btn-primary" href="index.jsp">Volver a Home</a>
+<a type="button" class="btn btn-primary" href="index.jsp">Atras</a>
 </div>
 </body>
 </html>
