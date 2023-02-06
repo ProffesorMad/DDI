@@ -1,13 +1,19 @@
-package Sample;
+package sample;
 
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
+import java.util.Map;
+import java.util.HashMap;
 
-@SpringBootApplication
-public class SampleApplication {
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
 
-	public static void main(String[] args) {
-		SpringApplication.run(SampleApplication.class, args);
-	}
+@RestController
+public class SampleController {
 
+    @RequestMapping("/sample")
+    public Map<String,String> sample(@RequestParam(value="name", defaultValue="World") String name) {
+    Map<String,String> result = new HashMap<>();
+    result.put("message", String.format("Hello, %s", name));
+    return result;
+    }
 }
